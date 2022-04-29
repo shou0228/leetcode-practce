@@ -16,7 +16,6 @@ public boolean containsDuplicate_bruteforce(int[] nums) {
 }
 #O(n^2)
 ------------------------------------------------------------------------------------------------------
-####################
 #排序解法
 public boolean containsDuplicate(int[] nums) {
    if (nums == null || nums.length == 0) return false;
