@@ -1,2 +1,2 @@
-solutions for leetcode
+Solutions for leetcode by java and python
 --------------------------------------------
