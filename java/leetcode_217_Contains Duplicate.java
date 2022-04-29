@@ -30,6 +30,8 @@ public boolean containsDuplicate(int[] nums) {
    return false;
 #O(nlogn)O(nlogn)
  ------------------------------------------------------------------------------------------------------
+ #最速解
+ #HashSet 是一種包含所有唯一元素的數據結構，
  public boolean containsDuplicate_extraMemory(int[] nums) {
    if (nums == null || nums.length == 0) return false;
    
