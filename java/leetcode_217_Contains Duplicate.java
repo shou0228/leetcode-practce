@@ -1,7 +1,7 @@
 #Contains Duplicate
 #Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 #暴力解法
-public boolean containsDuplicate_bruteforce(int[] nums) {
+public boolean containsDuplicate(int[] nums) {
    if (nums == null || nums.length == 0) return false;
    
    int l = nums.length;
@@ -32,7 +32,7 @@ public boolean containsDuplicate(int[] nums) {
  ------------------------------------------------------------------------------------------------------
  #最速解
  #HashSet 是一種包含所有唯一元素的數據結構，
- public boolean containsDuplicate_extraMemory(int[] nums) {
+ public boolean containsDuplicate(int[] nums) {
    if (nums == null || nums.length == 0) return false;
    
    Set<Integer> set = new HashSet<>();
