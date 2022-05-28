@@ -15,7 +15,7 @@ class Solution:
             
         return True
 
-#sort    #103ms 15.2memory
+#sort    #103ms 15.2memory 佔有空間最小
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         
