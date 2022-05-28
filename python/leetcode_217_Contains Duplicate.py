@@ -1,41 +1,20 @@
-#暴力解#sort
-class Solution(object):
+#暴力解#sort＃在Python3中，range()與xrange()統一合並為range()
+class Solution:
     
-    def containsDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        
         nums.sort()
-        for i in xrange(0, len(nums)-1):
+        
+        for i in range(0, len(nums)-1):
             if nums[i]==nums[i+1]:
                 return True
             
-        return False
-        
-#map#字典解法
-class Solution(object):
-    def containsDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
-        map = {}
-        for i in nums:
-            if i in map:
-                return True
-            map[i] = True
-            
-        return False
-              
+
 #最佳解 #set
-class Solution(object):
-    def containsDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
         return len(nums) != len(set(nums))
+        
         
         
         
