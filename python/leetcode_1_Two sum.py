@@ -9,6 +9,13 @@ class Solution:
                     return [i, j] #此印出結果為0,1為位元位置 符合2+7=9
 
                   
-                  
-                  
+#hash table 涉及是否存在的問題都可用雜湊表                  
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        #雜湊表
+        dict = {}
+        for i,j in enumerate(nums):
+            if target-j in dict:
+                return [dict[target-j],i]
+            dict[j] = i                        
                  
